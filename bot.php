@@ -64,7 +64,6 @@ else {
 }
     function send_message($chat_id,$message_id, $message){
         $text = urlencode($message);
-        $apiToken = $_ENV['5112200227:AAH0X28n5xjT-pZI5e-z6At848_kb8ZPiyQ'];  
-        file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?chat_id=$chat_id&reply_to_message_id=$message_id&text=$text&parse_mode=Markdown");
+        file_get_contents("https://api.telegram.org/bot5112200227:AAH0X28n5xjT-pZI5e-z6At848_kb8ZPiyQ/sendMessage?chat_id=$chat_id&reply_to_message_id=$message_id&text=$text&parse_mode=Markdown");
     }
 ?>
